@@ -1,5 +1,5 @@
 body {
-	font-family: 'Akaya Kanadaka', cursive;
+	font-family: "Akaya Kanadaka", cursive;
 	background-color: khaki;
 }
 
@@ -66,14 +66,19 @@ li {
 }
 
 .text {
-	overflow: scroll;
+	overflow:auto;
+	align-self: stretch;
+	display: flex;
+	align-items: center;
+	width: 100%;
 }
 
 .close {
+	overflow: hidden;
 	height: 30px;
+	line-height: 20px;
 	font-size: 50px;
 	display: block;
-	line-height: 25px;
 	transition: 0.3s linear;
 }
 
@@ -91,7 +96,7 @@ li.checked {
 }
 
 .text.checked::before {
-	content: '';
+	content: "";
 	position: absolute;
 	border-color: #fff;
 	border-style: solid;
