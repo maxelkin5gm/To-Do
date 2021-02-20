@@ -89,6 +89,10 @@ li {
   position: relative;
 }
 
+.text {
+  overflow: scroll;
+}
+
 .close {
   height: 30px;
   font-size: 50px;
